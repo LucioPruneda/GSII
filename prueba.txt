@@ -47,4 +47,4 @@ print("Del Combo1 se vendieron:", i1)
 print("Del Combo2 se vendieron:", i2)
 print("Porcentaje de ventas de Combo1:", porcentaje1)
 print("Porcentaje de ventas de Combo2:", porcentaje2)
-print("Chau")
+

@@ -8,6 +8,7 @@ porcentaje2 = 0
 rTotal = 0
 combo1 = 0 
 combo2 = 0
+ventamax=0
 pedidos = int(input("Presione 1 para ingresar un pedido o cualquier otro numero para terminar: "))
 
 while pedidos == 1:
@@ -21,6 +22,8 @@ while pedidos == 1:
     if combo == 1:
         combo1 = 120
         print("Total a pagar: ", combo1)
+        if combo1>ventamax:
+            ventamax =combo1
         r1 += combo1
         i1 += 1
     elif combo == 2:
@@ -28,6 +31,8 @@ while pedidos == 1:
         r2 += combo2
         i2 += 1
         print("Total a pagar: ", combo2)
+        if combo2>ventamax:
+            ventamax =combo2
 
     else:
         print("La opción ingresada no es correcta.")
@@ -47,4 +52,4 @@ print("Del Combo1 se vendieron:", i1)
 print("Del Combo2 se vendieron:", i2)
 print("Porcentaje de ventas de Combo1:", porcentaje1)
 print("Porcentaje de ventas de Combo2:", porcentaje2)
-
+print("venta maxima fue", ventamax)
